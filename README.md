@@ -23,6 +23,7 @@ bgimg = pygame.image.load("pycham.jpg")
 bgimg = pygame.transform.scale(bgimg, (screen_width, screen_height)).convert_alpha() 
 
 # Game Title
+pygame.display.set_icon(pygame.image.load("pycham.jpg"))
 pygame.display.set_caption("Snakes With Razzak")
 pygame.display.update()
 clock = pygame.time.Clock()
@@ -167,6 +168,8 @@ def gameloop():
     pygame.quit()
     quit()
 welcome()
+
+
 
 
 
